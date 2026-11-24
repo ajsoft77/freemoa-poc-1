@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f2a2e" />
+    <meta name="robots" content="noindex, nofollow" />
+    <script>
+      // 하위 경로에 올렸을 때 끝 슬래시 없이 열면 상대 경로 자산이 깨지므로 슬래시를 붙여 준다
+      if (!/\/$|\.html$/.test(location.pathname)) location.replace(location.pathname + '/' + location.search + location.hash);
+    </script>
+    <title>견적온 — 견적부터 회수까지</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
